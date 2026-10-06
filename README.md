@@ -12,7 +12,7 @@ This repository is a plain-language guide and an agent skill. Both are based on 
 
 A name is easy to copy. An attacker can make an agent with a name that looks almost the same as your name. Without proof, a person cannot see the difference. ANAB treats a name only as a hint. This guide shows you how to prove that the name is really yours, so that people and other agents can trust it.
 
-## Who it is for
+## Who is it for?
 
 This guide is for vibe coders and other people who make AI agents but are not security specialists. You do not need to write code to use the skill. The skill uses the open [Agent Skills](https://agentskills.io) format (`SKILL.md`), so it works with Claude, Codex, GitHub Copilot, and other AI agents that support this format.
 
@@ -23,7 +23,7 @@ This guide is for vibe coders and other people who make AI agents but are not se
 3. **Honest results.** The skill tells you the tier that your evidence supports. It does not tell you the tier that you want.
 4. **Your files stay yours.** The drafts go into your project folder. You can read, change, or delete them at any time.
 
-## What it does
+## What does it do?
 
 Ask your AI agent to check your agent against ANAB. The skill helps your AI agent to do these steps:
 
@@ -36,7 +36,7 @@ Ask your AI agent to check your agent against ANAB. The skill helps your AI agen
 
 The skill also looks for three frequent mistakes. The first mistake is a generic "Verified" badge. The second mistake is a high tier with weak evidence. The third mistake is an agent that acts with more authority than you gave it.
 
-## How it works
+## How does it work?
 
 *The diagrams below use the visual language of [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design):*
 
