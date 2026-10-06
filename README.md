@@ -54,6 +54,16 @@ To make a claim, you select your tier and profile. Then you collect evidence and
 
 First, make a folder with the name `agent-name-assurance`. Put `SKILL.md` from this repository in that folder. Then do the steps for your AI agent.
 
+### One command for all agents
+
+If you have Node.js, run this command in a terminal. The command installs the skill for Claude Code, Codex, GitHub Copilot, and other agents.
+
+```
+npx skills add ams-builds/agent-name-assurance-explained
+```
+
+To get the latest version later, run `npx skills update`. The command uses [skills](https://github.com/vercel-labs/skills) by [Vercel](https://github.com/vercel-labs). If you do not use a terminal, use the instructions for your agent below.
+
 ### Claude
 
 1. In claude.ai or the Claude desktop app, make a zip file of the `agent-name-assurance` folder.
