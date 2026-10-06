@@ -1,16 +1,16 @@
 # agent-name-assurance-explained
 
-**The pitch: your AI agent has a name. This guide shows you how to prove that the name is really yours, so that people and other agents can trust it.**
+## What is it?
+
+This repository is a plain-language guide and a Claude skill. Both are based on the Agent Name Assurance Baseline (ANAB), an open draft standard. ANAB tells you how to connect an agent name to a cryptographic key. It also tells you how to show the strength of that connection, and how to give evidence for it.
 
 ![A chain of five parts. The agent name, the proof of binding, the cryptographic ID, and the Agent Page go to a visitor. The visitor decides to trust the agent or not. The proof of binding carries the trust.](assets/name-is-not-proof.svg)
 
 *Do you want the technical words in plain English? Refer to the [Jargon Buster](JARGON.md).*
 
-This repository is a plain-language guide and a Claude skill. Both are based on the Agent Name Assurance Baseline (ANAB), an open draft standard. ANAB tells you how to connect an agent name to a cryptographic key. It also tells you how to show the strength of that connection, and how to give evidence for it.
+## What problem does it solve?
 
-## Why it is important
-
-A name is easy to copy. An attacker can make an agent with a name that looks almost the same as your name. Without proof, a person cannot see the difference. ANAB treats a name only as a hint. Trust comes from the proof behind the name.
+A name is easy to copy. An attacker can make an agent with a name that looks almost the same as your name. Without proof, a person cannot see the difference. ANAB treats a name only as a hint. This guide shows you how to prove that the name is really yours, so that people and other agents can trust it.
 
 ## Who it is for
 
