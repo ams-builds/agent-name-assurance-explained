@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This repository is a plain-language guide and a Claude skill. Both are based on the Agent Name Assurance Baseline (ANAB), an open draft standard. ANAB tells you how to connect an agent name to a cryptographic key. It also tells you how to show the strength of that connection, and how to give evidence for it.
+This repository is a plain-language guide and an agent skill. Both are based on the Agent Name Assurance Baseline (ANAB), an open draft standard. ANAB tells you how to connect an agent name to a cryptographic key. It also tells you how to show the strength of that connection, and how to give evidence for it.
 
 ![A chain of five parts. The agent name, the proof of binding, the cryptographic ID, and the Agent Page go to a visitor. The visitor decides to trust the agent or not. The proof of binding carries the trust.](assets/name-is-not-proof.svg)
 
@@ -14,7 +14,7 @@ A name is easy to copy. An attacker can make an agent with a name that looks alm
 
 ## Who it is for
 
-This guide is for vibe coders and other people who make AI agents but are not security specialists. You do not need to write code to use the skill. The skill works in Claude chat, Claude Cowork, and the Claude apps.
+This guide is for vibe coders and other people who make AI agents but are not security specialists. You do not need to write code to use the skill. The skill uses the open [Agent Skills](https://agentskills.io) format (`SKILL.md`), so it works with Claude, Codex, GitHub Copilot, and other AI agents that support this format.
 
 ## Safe by default
 
@@ -25,7 +25,7 @@ This guide is for vibe coders and other people who make AI agents but are not se
 
 ## What it does
 
-Ask Claude to check your agent against ANAB. The skill helps Claude to do these steps:
+Ask your AI agent to check your agent against ANAB. The skill helps your AI agent to do these steps:
 
 1. Find out what your agent does and who relies on it
 2. Select a tier, a profile, and an assurance level
@@ -52,13 +52,32 @@ To make a claim, you select your tier and profile. Then you collect evidence and
 
 ## How to install
 
-**Claude chat, Claude Cowork, and the Claude apps**: upload `SKILL.md` as a custom skill. You do not need other files.
+First, make a folder with the name `agent-name-assurance`. Put `SKILL.md` from this repository in that folder. Then do the steps for your AI agent.
 
-*In Claude Code, you can also put this folder in a skills directory.*
+### Claude
+
+1. In claude.ai or the Claude desktop app, make a zip file of the `agent-name-assurance` folder.
+2. Upload the zip file in **Settings > Capabilities > Skills**.
+3. In Claude Code, put the folder in `~/.claude/skills/agent-name-assurance/`.
+
+### Codex
+
+1. Put the folder in `~/.agents/skills/agent-name-assurance/` for all your projects.
+2. Or, put the folder in `.agents/skills/agent-name-assurance/` in one project.
+3. Or, tell Codex to use `$skill-installer` with the GitHub URL of this repository.
+4. If the skill does not show, start Codex again. Source: [Codex skills documentation](https://learn.chatgpt.com/docs/build-skills).
+
+### GitHub Copilot
+
+1. Put the folder in `~/.copilot/skills/agent-name-assurance/` for all your projects.
+2. Or, put the folder in `.github/skills/agent-name-assurance/` in one repository.
+3. Use Copilot in agent mode. Source: [GitHub Copilot skills documentation](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills).
+
+These three agents are the most used AI coding agents in the [JetBrains 2026 survey](https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/). Other agents that support Agent Skills use the same `SKILL.md` file. Refer to the documentation of your agent for the folder.
 
 ## How to use it
 
-After you install the skill, speak to Claude in your usual words:
+After you install the skill, speak to your AI agent in your usual words:
 
 - "Check my agent against the Agent Name Assurance Baseline"
 - "Which ANAB tier can my agent get?"
@@ -68,7 +87,7 @@ The skill starts automatically. You do not need to use its name.
 
 ## Credit and license
 
-This guide is based on [agent-name-assurance-baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline) by Sankarshan Mukhopadhyay, version 0.10.0. That project uses the Apache License 2.0. This repository uses the same license. Refer to [LICENSE](LICENSE) and [NOTICE](NOTICE).
+This guide is based on [agent-name-assurance-baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline) by [Sankarshan Mukhopadhyay](https://github.com/sankarshanmukhopadhyay), version 0.10.0. That project uses the Apache License 2.0. This repository uses the same license. Refer to [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
 This is an independent plain-language guide. It is not an official part of the source project. For the full rules, use the source specification.
 
@@ -76,7 +95,7 @@ Changes from the source:
 
 1. I wrote the main concepts again in Simplified Technical English, for readers who are not specialists.
 2. I made three new diagrams.
-3. I wrote a Claude skill that applies the baseline to one agent.
+3. I wrote an agent skill that applies the baseline to one agent.
 4. I did not copy the specification, the schemas, or the tools. The skill refers to them by their file paths in the source repository.
 
 ---

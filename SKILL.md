@@ -5,7 +5,7 @@ description: Help a user check their own AI agent against the Agent Name Assuran
 
 # Agent Name Assurance
 
-The Agent Name Assurance Baseline (ANAB) is an open draft standard by Sankarshan Mukhopadhyay. Source: https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline (version 0.10.0). All file paths in this skill refer to that repository.
+The Agent Name Assurance Baseline (ANAB) is an open draft standard by [Sankarshan Mukhopadhyay](https://github.com/sankarshanmukhopadhyay). Source: https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline (version 0.10.0). All file paths in this skill refer to that repository.
 
 The main idea of ANAB is that an agent name is only a hint. Trust comes from the proof that connects the name to a cryptographic key, and from the evidence for each rule. Each claim has three parts: a tier (AN-0 to AN-3), a profile (Core, Deploy, Transact, or Enterprise), and an assurance level (AL1 to AL4).
 
@@ -139,5 +139,5 @@ Tell the user that ANAB is a draft standard. Tell the user to read the source sp
 3. **A credential without revocation.** If nobody can cancel a credential, the credential does not give trust.
 4. **The name implies authority.** A verified name does not give the agent permission to act. Control `ANAGB-AI-06` prohibits this.
 5. **Long-lived shared keys for delegation.** You cannot revoke them easily, and you cannot audit them. Use scoped and time-limited delegation (control `ANAGB-AI-05`).
-6. **A human check that is only advice.** If the agent can continue without the approval, the check does not protect anything.
+6. **A human check that is only advice.** If the agent can continue without approval, it gives no protection.
 7. **Silent trust upgrades.** If the proof is missing, old, or not clear, the client must fail safe (control `ANAGB-A2A-10`).

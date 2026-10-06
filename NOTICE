@@ -1,8 +1,9 @@
 agent-name-assurance-explained
 
 This product includes concepts, control IDs, and file references from
-agent-name-assurance-baseline (ANAB), version 0.10.0, by Sankarshan Mukhopadhyay:
-https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline
+agent-name-assurance-baseline (ANAB), version 0.10.0. The author is
+Sankarshan Mukhopadhyay (https://github.com/sankarshanmukhopadhyay).
+Source: https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline
 That work is licensed under the Apache License, Version 2.0.
 The source repository has no NOTICE file.
 
@@ -12,6 +13,6 @@ official part of the source project.
 Changes from the source:
 - The main concepts are written again in Simplified Technical English.
 - The three diagrams in assets/ are new.
-- SKILL.md is a new Claude skill that applies the baseline to one agent.
+- SKILL.md is a new agent skill (Agent Skills format) that applies the baseline to one agent.
 - The specification, schemas, and tools are not copied. The guide refers to
   them by their file paths in the source repository.
