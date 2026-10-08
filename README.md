@@ -2,11 +2,11 @@
 
 ## What is it?
 
-This repository is a plain-language guide and an agent skill. Both are based on the Agent Name Assurance Baseline (ANAB), an open draft standard. ANAB tells you how to connect an agent name to a cryptographic key. It also tells you how to show the strength of that connection, and how to give evidence for it.
+This repository is a simple guide and a ready-made skill for your AI agent. Both are based on the Agent Name Assurance Baseline (ANAB), an open draft standard. ANAB tells you how to connect an agent name to a cryptographic key. It also tells you how to show the strength of that connection, and how to give evidence for it.
 
 ![A chain of five parts. The agent name, the proof of binding, the cryptographic ID, and the Agent Page go to a visitor. The visitor decides to trust the agent or not. The proof of binding carries the trust.](assets/name-is-not-proof.svg)
 
-*Do you want the technical words in plain English? Refer to the [Jargon Buster](JARGON.md).*
+*Do you want simple meanings for the technical words? Refer to the [Jargon Buster](JARGON.md).*
 
 ## What problem does it solve?
 
@@ -99,7 +99,7 @@ The skill starts automatically. You do not need to use its name.
 
 This guide is based on [agent-name-assurance-baseline](https://github.com/sankarshanmukhopadhyay/agent-name-assurance-baseline) by [Sankarshan Mukhopadhyay](https://github.com/sankarshanmukhopadhyay), version 0.10.0. That project uses the Apache License 2.0. This repository uses the same license. Refer to [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-This is an independent plain-language guide. It is not an official part of the source project. For the full rules, use the source specification.
+This is an independent guide. It is not an official part of the source project. For the full rules, use the source specification.
 
 Changes from the source:
 
