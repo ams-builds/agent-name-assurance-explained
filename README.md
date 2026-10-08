@@ -112,4 +112,4 @@ Changes from the source:
 
 ---
 
-*New words? The [Jargon Buster](JARGON.md) gives plain-English explanations of tier, profile, assurance level, evidence bundle, revocation, and more.*
+*New words? The [Jargon Buster](JARGON.md) gives simple explanations of tier, profile, assurance level, evidence bundle, revocation, and more.*

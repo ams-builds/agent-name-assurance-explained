@@ -1,6 +1,6 @@
 # Jargon Buster
 
-Plain-English explanations of the technical words in this project. The README does not use these words when it can. This file gives the exact words for readers who want them.
+Simple meanings of the technical words in this project. The README does not use these words when it can. This file gives the exact words for readers who want them.
 
 **A2A (Agent-to-Agent)**
 A protocol that lets one AI agent find another agent and give it tasks. ANAB has extra rules for agents that use A2A.
